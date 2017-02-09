@@ -1,0 +1,9 @@
+C:\Users\MyComputer\Desktop\[Sharecode.vn] Code do an thiet ke web ban hang sony ASP.Net full code\MOONLY\MOONLY.BusinessLogic\bin\Debug\MOONLY.BusinessLogic.dll
+C:\Users\MyComputer\Desktop\[Sharecode.vn] Code do an thiet ke web ban hang sony ASP.Net full code\MOONLY\MOONLY.BusinessLogic\bin\Debug\MOONLY.BusinessLogic.pdb
+C:\Users\MyComputer\Desktop\[Sharecode.vn] Code do an thiet ke web ban hang sony ASP.Net full code\MOONLY\MOONLY.BusinessLogic\bin\Debug\MOONLY.Common.dll
+C:\Users\MyComputer\Desktop\[Sharecode.vn] Code do an thiet ke web ban hang sony ASP.Net full code\MOONLY\MOONLY.BusinessLogic\bin\Debug\MOONLY.DataAccess.dll
+C:\Users\MyComputer\Desktop\[Sharecode.vn] Code do an thiet ke web ban hang sony ASP.Net full code\MOONLY\MOONLY.BusinessLogic\bin\Debug\MOONLY.Common.pdb
+C:\Users\MyComputer\Desktop\[Sharecode.vn] Code do an thiet ke web ban hang sony ASP.Net full code\MOONLY\MOONLY.BusinessLogic\bin\Debug\MOONLY.DataAccess.pdb
+C:\Users\MyComputer\Desktop\[Sharecode.vn] Code do an thiet ke web ban hang sony ASP.Net full code\MOONLY\MOONLY.BusinessLogic\obj\Debug\MOONLY.BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\MyComputer\Desktop\[Sharecode.vn] Code do an thiet ke web ban hang sony ASP.Net full code\MOONLY\MOONLY.BusinessLogic\obj\Debug\MOONLY.BusinessLogic.dll
+C:\Users\MyComputer\Desktop\[Sharecode.vn] Code do an thiet ke web ban hang sony ASP.Net full code\MOONLY\MOONLY.BusinessLogic\obj\Debug\MOONLY.BusinessLogic.pdb
