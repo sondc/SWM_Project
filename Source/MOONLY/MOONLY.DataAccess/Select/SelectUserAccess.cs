@@ -6,7 +6,7 @@ using System.Web.UI.WebControls;
 
 namespace MOONLY.DataAccess.Select
 {
-   public class TruyVanDuLieuDangNhapNguoiDung
+    public class SelectUserAccess
     {
         private User _nguoidung;
         public User Nguoidung

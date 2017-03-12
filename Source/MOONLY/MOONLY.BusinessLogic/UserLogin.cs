@@ -24,10 +24,11 @@ namespace MOONLY.BusinessLogic
         }
         public void Thucthi()
         {
-            TruyVanDuLieuDangNhapNguoiDung dulieunguoidung = new
-            TruyVanDuLieuDangNhapNguoiDung();
+            SelectUserAccess dulieunguoidung = new
+            SelectUserAccess();
             dulieunguoidung.Nguoidung = this.Nguoidung;
             Ketqua = dulieunguoidung.Laydulieu();
+
             GridView grid = new GridView();
             grid.DataSource = Ketqua;
             grid.DataBind();
