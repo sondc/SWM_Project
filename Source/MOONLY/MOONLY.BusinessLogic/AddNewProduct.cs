@@ -16,7 +16,7 @@ namespace MOONLY.BusinessLogic
         }
         public void Thucthi()
         {
-            ChenDuLieuSanPham dulieusanpham = new ChenDuLieuSanPham();
+            InsertProduct dulieusanpham = new InsertProduct();
             dulieusanpham.Sanpham = this.Product;
             dulieusanpham.ChenDuLieu();
         }

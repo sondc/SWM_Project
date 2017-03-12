@@ -16,7 +16,7 @@ namespace MOONLY.BusinessLogic
         }
         public void Thucthi()
         {
-            XoaDuLieuGioHang dulieugiohang = new XoaDuLieuGioHang();
+            MOONLY.DataAccess.Delete.DeleteOrder dulieugiohang = new MOONLY.DataAccess.Delete.DeleteOrder();
             dulieugiohang.Giohang = this.Giohang;
             dulieugiohang.Xoadulieu();
         }

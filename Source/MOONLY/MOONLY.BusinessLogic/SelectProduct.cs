@@ -16,7 +16,7 @@ namespace MOONLY.BusinessLogic
         }
         public void Thucthi()
         {
-            TruyVanDuLieuSanPham dulieusanpham = new TruyVanDuLieuSanPham();
+            MOONLY.DataAccess.Select.SelectProduct dulieusanpham = new MOONLY.DataAccess.Select.SelectProduct();
             Ketqua = dulieusanpham.Laydulieu();
         }
     }

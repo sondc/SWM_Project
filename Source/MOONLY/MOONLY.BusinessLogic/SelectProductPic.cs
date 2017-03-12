@@ -23,8 +23,8 @@ namespace MOONLY.BusinessLogic
         }
         public void Thucthi()
         {
-            TruyVanDuLieuHinhSanPhamByID chonhinhsanpham = new
-            TruyVanDuLieuHinhSanPhamByID();
+            SelectPictureByID chonhinhsanpham = new
+            SelectPictureByID();
             chonhinhsanpham.Sanpham = this.Sanpham;
             Ketqua = chonhinhsanpham.Laydulieu();
         }

@@ -16,7 +16,7 @@ namespace MOONLY.BusinessLogic
         }
         public void Thucthi()
         {
-            TruyVanDuLieu10SanPham dulieusanpham = new TruyVanDuLieu10SanPham();
+            Select10Product dulieusanpham = new Select10Product();
             Ketqua = dulieusanpham.Laydulieu();
         }
     }

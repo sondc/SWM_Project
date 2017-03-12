@@ -18,7 +18,7 @@ namespace MOONLY.BusinessLogic
 
         public void Thucthi()
         {
-            TruyVanDuLieuDanhMucMaster dulieudanhmucsanpham = new TruyVanDuLieuDanhMucMaster();
+            MOONLY.DataAccess.Select.SelectCategoryMaster dulieudanhmucsanpham = new MOONLY.DataAccess.Select.SelectCategoryMaster();
             Result = dulieudanhmucsanpham.Laydulieu();
         }
 

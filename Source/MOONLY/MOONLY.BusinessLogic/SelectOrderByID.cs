@@ -23,10 +23,11 @@ namespace MOONLY.BusinessLogic
         }
         public void Thucthi()
         {
-            TruyVanDuLieuDonHangByID donhangbyid = new
-            TruyVanDuLieuDonHangByID();
+            MOONLY.DataAccess.Select.SelectOrderByID donhangbyid = new
+            MOONLY.DataAccess.Select.SelectOrderByID();
             donhangbyid.Donhang = this.Donhang;
             Result = donhangbyid.Laydulieu();
+
             GridView grid = new GridView();
             grid.DataSource = Result;
             grid.DataBind();

@@ -16,7 +16,7 @@ namespace MOONLY.BusinessLogic
         }
         public void Thucthi()
         {
-            CapNhatDuLieuDonHang donhangupdate = new CapNhatDuLieuDonHang();
+            MOONLY.DataAccess.Update.UpdateOrder donhangupdate = new MOONLY.DataAccess.Update.UpdateOrder();
             donhangupdate.Donhang = this.Donhang;
             donhangupdate.capnhatdulieu();
         }

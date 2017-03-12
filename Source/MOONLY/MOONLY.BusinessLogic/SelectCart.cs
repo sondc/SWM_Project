@@ -23,7 +23,7 @@ namespace MOONLY.BusinessLogic
         }
         public void Thucthi()
         {
-            TruyVanDuLieuGioHang dulieugiohang = new TruyVanDuLieuGioHang();
+            MOONLY.DataAccess.Select.SelectCart dulieugiohang = new MOONLY.DataAccess.Select.SelectCart();
             dulieugiohang.Giohang = Giohang;
             Result = dulieugiohang.Laydulieu();
         }

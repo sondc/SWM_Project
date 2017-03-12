@@ -22,7 +22,7 @@ namespace MOONLY.BusinessLogic
         }
         public void thucthi()
         {
-            TruyVanDuLieuTimSanPham timsanpham = new TruyVanDuLieuTimSanPham();
+            SelectSearchProduct timsanpham = new SelectSearchProduct();
             Result = timsanpham.Laydulieu(SearchString);
 
         }

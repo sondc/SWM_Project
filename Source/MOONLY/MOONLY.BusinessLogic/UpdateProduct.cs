@@ -16,8 +16,9 @@ namespace MOONLY.BusinessLogic
         }
         public void Thucthi()
         {
-            CapNhatDuLieuSanPham dulieusanpham = new
-            CapNhatDuLieuSanPham();
+            MOONLY.DataAccess.Update.UpdateProduct dulieusanpham = new
+            MOONLY.DataAccess.Update.UpdateProduct();
+
             dulieusanpham.Sanpham = this.Sanpham;
             dulieusanpham.CapNhatSanphammoi();
         }

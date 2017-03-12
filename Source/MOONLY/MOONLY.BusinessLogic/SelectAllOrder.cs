@@ -16,7 +16,7 @@ namespace MOONLY.BusinessLogic
         }
         public void Thucthi()
         {
-            TruyVanDuLieuTatCaDonHang truyvantatcadonhang = new TruyVanDuLieuTatCaDonHang();
+            MOONLY.DataAccess.Select.SelectAllOrder truyvantatcadonhang = new MOONLY.DataAccess.Select.SelectAllOrder();
             Result = truyvantatcadonhang.Laydulieu();
         }
     }

@@ -16,7 +16,7 @@ namespace MOONLY.BusinessLogic
         }
         public void Thucthi()
         {
-            ChenDuLieuNguoiDung nguoidungdata = new ChenDuLieuNguoiDung();
+            InsertUser nguoidungdata = new InsertUser();
             nguoidungdata.Nguoidung = this.Nguoidung;
             nguoidungdata.chendulieunguoidung();
             this.Nguoidung.IdUser = nguoidungdata.Nguoidung.IdUser;

@@ -16,7 +16,7 @@ namespace MOONLY.BusinessLogic
         }
         public void Thucthi()
         {
-            TruyVanDuLieuThongKeTruyCap dulieuthongketruycap = new TruyVanDuLieuThongKeTruyCap();
+            SelectAllAccess dulieuthongketruycap = new SelectAllAccess();
             Result = dulieuthongketruycap.Laydulieu();
         }
     }

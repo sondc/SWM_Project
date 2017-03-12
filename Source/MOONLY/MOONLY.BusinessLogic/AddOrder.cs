@@ -17,8 +17,8 @@ namespace MOONLY.BusinessLogic
         }
         public void Thucthi()
         {
-            ChenDuLieuDonHang chendulieudonhang = new ChenDuLieuDonHang();
-            ChenDuLieuChiTietDonHang chenchitietdonhang = new ChenDuLieuChiTietDonHang();
+            InsertOrder chendulieudonhang = new InsertOrder();
+            InsertOrderDetail chenchitietdonhang = new InsertOrderDetail();
             chendulieudonhang.Donhang = this.Donhang;
             GridView g = new GridView();
             g.DataSource = chendulieudonhang.chenVaLaydulieu();

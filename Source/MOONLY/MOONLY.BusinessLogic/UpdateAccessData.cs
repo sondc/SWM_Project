@@ -9,7 +9,7 @@ namespace MOONLY.BusinessLogic
     {
        public void Thucthi()
        {
-           CapNhatDuLieuThongKeTruyCap dulieuthongketruycap = new CapNhatDuLieuThongKeTruyCap();
+           UpdateDataAccess dulieuthongketruycap = new UpdateDataAccess();
            dulieuthongketruycap.Capnhatdulieu();
        }
     }

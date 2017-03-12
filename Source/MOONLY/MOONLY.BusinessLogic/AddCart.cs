@@ -16,7 +16,7 @@ namespace MOONLY.BusinessLogic
         }
         public void Thucthi()
         {
-            ChenDuLieuGioHang dulieugiohang = new ChenDuLieuGioHang();
+            InsertCart dulieugiohang = new InsertCart();
             dulieugiohang.Giohang = this.Cart;
             dulieugiohang.chendulieugiohang();
         }

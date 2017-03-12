@@ -29,8 +29,8 @@ namespace MOONLY.BusinessLogic
         }
         public void Thucthi()
         {
-            TruyVanDuLieuDangNhapAdmin dangnhapadmin = new
-            TruyVanDuLieuDangNhapAdmin();
+            SelectAdminAccesst dangnhapadmin = new
+            SelectAdminAccesst();
             dangnhapadmin.Nguoidung = this.Nguoidung;
             Ketqua = dangnhapadmin.Laydulieu();
             GridView grid = new GridView();

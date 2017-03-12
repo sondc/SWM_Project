@@ -23,7 +23,7 @@ namespace MOONLY.BusinessLogic
         }
         public void Thucthi()
         {
-            TruyVanDuLieuDonHang donhangchon = new TruyVanDuLieuDonHang();
+            MOONLY.DataAccess.Select.SelectOrder donhangchon = new MOONLY.DataAccess.Select.SelectOrder();
             donhangchon.NguoiDung = this.Nguoidung;
             Ketqua = donhangchon.Laydulieu();
         }
