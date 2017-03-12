@@ -22,8 +22,8 @@ public partial class Admin_ThemSanPham : System.Web.UI.Page
     }
     private void HienThiDanhMucSanPham()
     {
-        XuLyLayDanhMucSanPham xulydanhmucsanpham = new
-        XuLyLayDanhMucSanPham();
+        SelectCategory xulydanhmucsanpham = new
+        SelectCategory();
         try
         {
             xulydanhmucsanpham.Thucthi();
@@ -35,14 +35,14 @@ public partial class Admin_ThemSanPham : System.Web.UI.Page
         dropDanhMucSanPham.DataTextField = "TenDanhMucSanPham";
         // dropDanhMucSanPham là ID của điều khiển DropDownList
         dropDanhMucSanPham.DataValueField = "IDDanhMucSanPham";
-        dropDanhMucSanPham.DataSource = xulydanhmucsanpham.Ketqua;
+        dropDanhMucSanPham.DataSource = xulydanhmucsanpham.Result;
         dropDanhMucSanPham.DataBind();
     }
     protected void btnCapNhat_Click(object sender, EventArgs e)
     {
         if (IsValid)
         {
-            XuLyThemSanPham themsanpham = new XuLyThemSanPham();
+            AddNewProduct themsanpham = new AddNewProduct();
             MOONLY.Common.Producct Spham = new MOONLY.Common.Producct();
             Spham.Iddanhmucsanpham = int.Parse(dropDanhMucSanPham.SelectedItem.Value);
             Spham.Ten = txtTenSanPham.Text; // txtTenSanPham là ID của TextBox
@@ -50,7 +50,7 @@ public partial class Admin_ThemSanPham : System.Web.UI.Page
             Spham.Dulieuhinhsanpham = fileuploadHinhSanPham.FileBytes;
             // fileuploadHinhSanPham là ID của điều khiển FileUpLoad
             Spham.Giasanpham = Convert.ToDecimal(txtGia.Text); // txtGia là ID của TextBox
-            themsanpham.Sanpham = Spham;
+            themsanpham.Product = Spham;
             try
             {
                 themsanpham.Thucthi();

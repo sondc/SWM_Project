@@ -21,7 +21,7 @@ public partial class DangKy : BasePage
     protected void btnDangKy_Click(object sender, ImageClickEventArgs e)
     {
         User nguoidung = new User();
-        XuLyThemNguoiDung themnguoidung = new XuLyThemNguoiDung();
+        AddNewUser themnguoidung = new AddNewUser();
         if (IsValid)
         {
             nguoidung.IdUserType = (int)Enums.KieuNguoiDung.CUSTOMER;

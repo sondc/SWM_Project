@@ -22,7 +22,7 @@ public partial class Admin_DangNhapAdmin1 : System.Web.UI.Page
         if (IsValid)
         {
             User nguoidung = new User();
-            XuLyDangNhapAdmin xulydangnhapadmin = new XuLyDangNhapAdmin();
+            AdminLogin xulydangnhapadmin = new AdminLogin();
             nguoidung.Acccount = textUsername.Text;
             nguoidung.Password = textMatKhau.Text;
             xulydangnhapadmin.Nguoidung = nguoidung;

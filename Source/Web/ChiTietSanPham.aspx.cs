@@ -24,7 +24,7 @@ public partial class ChiTietSanPham : System.Web.UI.Page
     {
         Producct Spham = new Producct();
         Spham.Idsanpham = int.Parse(Request.QueryString["IdSanPham"]);
-        XuLyLaySanPhamByID laySanPham = new XuLyLaySanPhamByID();
+        SelectProductByID laySanPham = new SelectProductByID();
         laySanPham.Sanpham = Spham;
         try
         {

@@ -30,12 +30,12 @@ public partial class ThemDonHang : BasePage
     {
         MOONLY.Common.Cart giohang = new MOONLY.Common.Cart();
         giohang.Cartguid = TaoCartGUID.LayCartGUID();
-        XuLyLayGioHang xulylaygiohang = new XuLyLayGioHang();
+        SelectCart xulylaygiohang = new SelectCart();
         xulylaygiohang.Giohang = giohang;
         try
         {
             xulylaygiohang.Thucthi();
-            gridgiohang.DataSource = xulylaygiohang.Ketqua;
+            gridgiohang.DataSource = xulylaygiohang.Result;
             gridgiohang.DataBind();
         }
         catch
@@ -55,7 +55,7 @@ public partial class ThemDonHang : BasePage
     //---------Tạo đơn hàng, dựa số liệu trên gridview giỏ hàng-------------------
     private void GuiDonHang()
     {
-        XuLyThemDonHang themdonhang = new XuLyThemDonHang();
+        AddOrder themdonhang = new AddOrder();
         themdonhang.Donhang = _donhang;
 
         try

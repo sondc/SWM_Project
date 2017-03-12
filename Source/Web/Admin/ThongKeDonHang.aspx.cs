@@ -21,7 +21,7 @@ public partial class Admin_ThongKeDonHang : System.Web.UI.Page
     }
     private void HienTatCaDonHang()
     {
-        XuLyLayTatCaDonHang laytatcadonhang = new XuLyLayTatCaDonHang();
+        SelectAllOrder laytatcadonhang = new SelectAllOrder();
         try
         {
             laytatcadonhang.Thucthi();
@@ -30,7 +30,7 @@ public partial class Admin_ThongKeDonHang : System.Web.UI.Page
         {
             Response.Redirect("../Trangloi.aspx");
         }
-        gridTatCaDonHang.DataSource = laytatcadonhang.Ketqua;
+        gridTatCaDonHang.DataSource = laytatcadonhang.Result;
         gridTatCaDonHang.DataBind();
     }
 }

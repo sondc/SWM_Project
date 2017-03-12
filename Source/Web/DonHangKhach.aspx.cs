@@ -23,7 +23,7 @@ public partial class DonHangKhach : BasePage
     }
     private void HienThiDonHang()
     {
-        XuLyLayDonHang laydonhang = new XuLyLayDonHang();
+        SelectOrder laydonhang = new SelectOrder();
         laydonhang.Nguoidung = NguoiDungHienTai;
 
         try

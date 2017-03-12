@@ -35,7 +35,7 @@ public partial class ChiTietDonHangKhach :BasePage
     }
     private void HienChiTietDonHang()
     {
-        XuLyLayChiTietDonHang xulychitiet = new XuLyLayChiTietDonHang();
+        SelectOrderDetail xulychitiet = new SelectOrderDetail();
         OrderDetail chitietdonhang = new OrderDetail();
         chitietdonhang.IdOrder = int.Parse(Request.QueryString["IdDonHang"]);
         xulychitiet.Chitietdonhang = chitietdonhang;

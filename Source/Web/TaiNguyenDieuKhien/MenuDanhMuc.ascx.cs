@@ -21,8 +21,8 @@ public partial class TaiNguyenDieuKhien_MenuDanhMuc : System.Web.UI.UserControl
     }
     private void DanhMucSanPham()
     {
-        XuLyLayDanhMucSanPham xulydanhmucsanpham = new
-        XuLyLayDanhMucSanPham();
+        SelectCategory xulydanhmucsanpham = new
+        SelectCategory();
         try
         {
             xulydanhmucsanpham.Thucthi();
@@ -31,7 +31,7 @@ public partial class TaiNguyenDieuKhien_MenuDanhMuc : System.Web.UI.UserControl
         {
             Response.Redirect("../Trangloi.aspx");
         }
-        GridView1.DataSource = xulydanhmucsanpham.Ketqua;
+        GridView1.DataSource = xulydanhmucsanpham.Result;
         GridView1.DataBind();
     }
 }

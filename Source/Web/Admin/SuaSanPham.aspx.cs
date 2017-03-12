@@ -25,8 +25,8 @@ public partial class Admin_SuaSanPham : System.Web.UI.Page
     //-----------Hiện danh mục sản phẩm----------------
     private void HienDanhMucSanPham()
     {
-        XuLyLayDanhMucSanPham xulydanhmucsanpham = new
-        XuLyLayDanhMucSanPham();
+        SelectCategory xulydanhmucsanpham = new
+        SelectCategory();
         try
         {
             xulydanhmucsanpham.Thucthi();
@@ -37,7 +37,7 @@ public partial class Admin_SuaSanPham : System.Web.UI.Page
         }
         dropDanhMucSanPham.DataTextField = "TenDanhMucSanPham";
         dropDanhMucSanPham.DataValueField = "IDDanhMucSanPham";
-        dropDanhMucSanPham.DataSource = xulydanhmucsanpham.Ketqua;
+        dropDanhMucSanPham.DataSource = xulydanhmucsanpham.Result;
         dropDanhMucSanPham.DataBind();
     }
     //----------Hiện sản phẩm theo id sản phẩm--------------
@@ -45,7 +45,7 @@ public partial class Admin_SuaSanPham : System.Web.UI.Page
     {
         MOONLY.Common.Producct Spham = new MOONLY.Common.Producct();
         Spham.Idsanpham = int.Parse(Request.QueryString["Idsanpham"]);
-        XuLyLaySanPhamByID laySanPhamByID = new XuLyLaySanPhamByID();
+        SelectProductByID laySanPhamByID = new SelectProductByID();
         laySanPhamByID.Sanpham = Spham;
         try
         {
@@ -84,7 +84,7 @@ public partial class Admin_SuaSanPham : System.Web.UI.Page
             }
             else
             {
-                XuLyLayHinhSanPham XuLyLayHinh = new XuLyLayHinhSanPham();
+                SelectProductPic XuLyLayHinh = new SelectProductPic();
                 XuLyLayHinh.Sanpham = Spham;
                 try
                 {
@@ -99,7 +99,7 @@ public partial class Admin_SuaSanPham : System.Web.UI.Page
                 DataView view = (DataView)src.Select(DataSourceSelectArguments.Empty);
                 Spham.Dulieuhinhsanpham = (byte[])view[0]["DuLieuHinhSanPham"];
             }
-            XuLyCapNhatSanPham capnhatsanpham = new XuLyCapNhatSanPham();
+            UpdateProduct capnhatsanpham = new UpdateProduct();
             capnhatsanpham.Sanpham = Spham;
             try
             {

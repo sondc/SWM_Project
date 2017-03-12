@@ -15,10 +15,10 @@ public partial class TaiNguyenDieuKhien_ThongKeTruyCap : System.Web.UI.UserContr
     protected void Page_Load(object sender, EventArgs e)
     {
         lblOnline.Text = Application["SoNguoiOnLine"].ToString();
-        XuLyLayThongKeTruyCap thongketruycap = new XuLyLayThongKeTruyCap();
+        SelectAllDataAccess thongketruycap = new SelectAllDataAccess();
         thongketruycap.Thucthi();
         // Hiển thị lượt truy cập ra điều khiển GridView1
-        GridView1.DataSource = thongketruycap.Ketqua; // GridView1 là ID của GridView
+        GridView1.DataSource = thongketruycap.Result; // GridView1 là ID của GridView
         GridView1.DataBind();
     }
 }

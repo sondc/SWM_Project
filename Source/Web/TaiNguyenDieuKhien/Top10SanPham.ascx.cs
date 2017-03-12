@@ -21,7 +21,7 @@ public partial class TaiNguyenDieuKhien_Top10SanPham : System.Web.UI.UserControl
     }
     private void HienThiSanPham()
     {
-        XuLyLay10SanPham xulylay10sanpham = new XuLyLay10SanPham();
+        Get10Product xulylay10sanpham = new Get10Product();
         try
         {
             xulylay10sanpham.Thucthi();

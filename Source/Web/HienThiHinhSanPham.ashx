@@ -15,7 +15,7 @@ public class HienThiHinhSanPham : IHttpHandler {
     public void ProcessRequest (HttpContext context) {
         Producct sanpham = new Producct();
         sanpham.Idhinhsanpham = int.Parse(context.Request.QueryString["Idhinhsanpham"]);
-        XuLyLayHinhSanPham XuLyLayHinh = new XuLyLayHinhSanPham();
+        SelectProductPic XuLyLayHinh = new SelectProductPic();
         XuLyLayHinh.Sanpham = sanpham;
         XuLyLayHinh.Thucthi();
         SqlDataSource src = new SqlDataSource();

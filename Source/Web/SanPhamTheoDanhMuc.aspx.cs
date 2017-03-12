@@ -25,7 +25,7 @@ public partial class SanPhamTheoDanhMuc : System.Web.UI.Page
     {
         Producct sanpham = new Producct();
         sanpham.Iddanhmucsanpham = int.Parse(Request.QueryString["IdDanhMucSanPham"]);
-        XuLyLayDuLieuSanPhamTheoDanhMuc xulylaysanpham = new XuLyLayDuLieuSanPhamTheoDanhMuc();
+        SelectProductByCategory xulylaysanpham = new SelectProductByCategory();
         xulylaysanpham.Sanpham = sanpham;
         try
         {

@@ -15,12 +15,12 @@ public partial class ThemGioHang : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        XuLyThemGioHang xulygiohang = new XuLyThemGioHang();
+        AddCart xulygiohang = new AddCart();
         MOONLY.Common.Cart giohang = new MOONLY.Common.Cart();
         giohang.IdProduct = int.Parse(Request.QueryString["IDsanpham"]);
         giohang.Cartguid = CartGUID;
         giohang.Quanlity = 1;
-        xulygiohang.Giohang = giohang;
+        xulygiohang.Cart = giohang;
         
         try
            {

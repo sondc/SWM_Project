@@ -22,7 +22,7 @@ public partial class DangNhap : BasePage
         if (IsValid)
         {
             User nguoidung = new User();
-            XuLyDangNhapNguoiDung xulydangnhap = new XuLyDangNhapNguoiDung();
+            UserLogin xulydangnhap = new UserLogin();
             nguoidung.Acccount = textUsername.Text;
             nguoidung.Password = textMatKhau.Text;
             xulydangnhap.Nguoidung = nguoidung;

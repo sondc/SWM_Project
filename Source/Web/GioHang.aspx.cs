@@ -26,7 +26,7 @@ public partial class GioHang : System.Web.UI.Page
     {
         MOONLY.Common.Cart giohang = new MOONLY.Common.Cart();
         giohang.Cartguid = CartGUID;
-        XuLyLayGioHang laygiohang = new XuLyLayGioHang();
+        SelectCart laygiohang = new SelectCart();
         laygiohang.Giohang = giohang;
         try
         {
@@ -36,7 +36,7 @@ public partial class GioHang : System.Web.UI.Page
         {
             Response.Redirect("Trangloi.aspx");
         }
-        gridgiohang.DataSource = laygiohang.Ketqua;
+        gridgiohang.DataSource = laygiohang.Result;
         gridgiohang.DataBind();
     }
     private string CartGUID
@@ -88,7 +88,7 @@ public partial class GioHang : System.Web.UI.Page
      //------------Thủ tục Update------------------
     private void Update(int id, int soluong)
     {
-        XuLyCapNhatGioHang xulycapnhat = new XuLyCapNhatGioHang();
+        UpdateCart xulycapnhat = new UpdateCart();
         MOONLY.Common.Cart giohang = new MOONLY.Common.Cart();
         giohang.Quanlity = soluong;
         giohang.IdCart = id;
@@ -106,7 +106,7 @@ public partial class GioHang : System.Web.UI.Page
     //--------------------Thủ tục Delete()------------------
     private void Delete(int id)
     {
-        XuLyXoaGioHang xulyxoagiohang = new XuLyXoaGioHang();
+        DeleteOrder xulyxoagiohang = new DeleteOrder();
         MOONLY.Common.Cart giohang = new MOONLY.Common.Cart();
         giohang.IdCart = id;
         xulyxoagiohang.Giohang = giohang;

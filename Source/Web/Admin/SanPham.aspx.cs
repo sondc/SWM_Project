@@ -21,7 +21,7 @@ public partial class Admin_SanPham : System.Web.UI.Page
     }
     private void HienSanPham()
     {
-        XuLyLaySanPham xulysanpham = new XuLyLaySanPham();
+        SelectProduct xulysanpham = new SelectProduct();
         try
         {
             xulysanpham.Thucthi();

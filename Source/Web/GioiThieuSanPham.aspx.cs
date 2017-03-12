@@ -23,7 +23,7 @@ public partial class GioiThieuSanPham : System.Web.UI.Page
     }
     private void HienThiSanPham()
     {
-        XuLyLaySanPham xulylaysanpham = new XuLyLaySanPham();
+        SelectProduct xulylaysanpham = new SelectProduct();
         try
         {
             xulylaysanpham.Thucthi();
@@ -46,8 +46,8 @@ public partial class GioiThieuSanPham : System.Web.UI.Page
     }
     private void Timsanpham(string tieuchuantim)
     {
-        XuLyLayTimSanPham xulytim = new XuLyLayTimSanPham();
-        xulytim.Tieuchuantim = tieuchuantim;
+        SearchProduct xulytim = new SearchProduct();
+        xulytim.SearchString = tieuchuantim;
         try
         {
             xulytim.thucthi();
@@ -56,7 +56,7 @@ public partial class GioiThieuSanPham : System.Web.UI.Page
         {
             Response.Redirect("Trangloi.aspx");
         }
-        dtlSanPham.DataSource = xulytim.Ketqua;// dtlSanPham là ID của Datalist
+        dtlSanPham.DataSource = xulytim.Result;// dtlSanPham là ID của Datalist
         dtlSanPham.DataBind();
         if (dtlSanPham.Items.Count != 0)
             lblketqua.Text = "Các sản phẩm bạn cần tìm:";

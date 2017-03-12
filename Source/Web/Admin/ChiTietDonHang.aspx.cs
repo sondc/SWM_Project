@@ -24,8 +24,8 @@ public partial class Admin_ChiTietDonHang : System.Web.UI.Page
     // ------------Hiển thị chi tiết đơn hàng trong gridview----------
     private void HienThiChiTietDonHang()
     {
-        XuLyLayChiTietDonHang xulychitietdonhang = new XuLyLayChiTietDonHang();
-        XuLyLayDonHangByID xulydonhangid = new XuLyLayDonHangByID();
+        SelectOrderDetail xulychitietdonhang = new SelectOrderDetail();
+        SelectOrderByID xulydonhangid = new SelectOrderByID();
         OrderDetail chitietdonhang = new OrderDetail();
         chitietdonhang.IdOrder = int.Parse(Request.QueryString["IDdonhang"]);
         xulychitietdonhang.Chitietdonhang = chitietdonhang;
@@ -59,7 +59,7 @@ public partial class Admin_ChiTietDonHang : System.Web.UI.Page
     // Hiển thị tình trạng đơn hàng trong dropdownlist-------
     private void HienThiTinhTrangDonHang()
     {
-        XuLyLayTinhTrangDonHang xulylaytinhtrangdonhang = new XuLyLayTinhTrangDonHang();
+        SelectOrderStatus xulylaytinhtrangdonhang = new SelectOrderStatus();
         try
         {
             xulylaytinhtrangdonhang.Thucthi();
@@ -102,7 +102,7 @@ public partial class Admin_ChiTietDonHang : System.Web.UI.Page
     protected void btnCapNhat_Click(object sender, ImageClickEventArgs e)
     {
         Order donhang = new Order();
-        XuLyCapNhatDonHang xulycapnhatdonhang = new XuLyCapNhatDonHang();
+        UpdateOrder xulycapnhatdonhang = new UpdateOrder();
         donhang.IdOrder = int.Parse(Request.QueryString["Iddonhang"]);
         donhang.Idtinhtrangdonhang =
         int.Parse(dropdownlistOrderStatus.SelectedItem.Value);
