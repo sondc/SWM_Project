@@ -14,21 +14,21 @@ using MOONLY.Operational;
 
 public partial class ThemDonHang : BasePage
 {
-    private DonHang _donhang = new DonHang();
+    private Order _donhang = new Order();
     private decimal _tongtien = 0; // để tính tổng cột thành tiền
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!IsPostBack)
         {
             Label lblWelcome = (Label)Master.FindControl("lblChao");
-            lblWelcome.Text = "Xin chào, " + base.NguoiDungHienTai.Hoten;
+            lblWelcome.Text = "Xin chào, " + base.NguoiDungHienTai.Name;
             HienThiGioHang();
         }
     }
     //-----------------Hiển thị nội dung giỏ hàng giống trang GioHang.aspx-----------------
     private void HienThiGioHang()
     {
-        MOONLY.Common.GioHang giohang = new MOONLY.Common.GioHang();
+        MOONLY.Common.Cart giohang = new MOONLY.Common.Cart();
         giohang.Cartguid = TaoCartGUID.LayCartGUID();
         XuLyLayGioHang xulylaygiohang = new XuLyLayGioHang();
         xulylaygiohang.Giohang = giohang;
@@ -77,13 +77,13 @@ public partial class ThemDonHang : BasePage
 
     protected void ImageButtonTaovaguidonhang_Click(object sender, ImageClickEventArgs e)
     {
-        MOONLY.Common.DonHang donhang = new MOONLY.Common.DonHang();
-        SanPham[] prods = new SanPham[gridgiohang.Rows.Count];
+        MOONLY.Common.Order donhang = new MOONLY.Common.Order();
+        Producct[] prods = new Producct[gridgiohang.Rows.Count];
         foreach (GridViewRow grow in gridgiohang.Rows)
         {
             if (grow.RowType == DataControlRowType.DataRow)
             {
-                SanPham Spham = new SanPham();
+                Producct Spham = new Producct();
                 DataKey data = gridgiohang.DataKeys[grow.DataItemIndex];
                 Spham.Idsanpham = int.Parse(data.Values["IdSanPham"].ToString());
                 Label lblTenSanPham = (Label)grow.FindControl("lblTenSanPham");
@@ -96,7 +96,7 @@ public partial class ThemDonHang : BasePage
             }
         }
         _donhang.Chitietdonhang.Sanpham = prods;
-        _donhang.Idnguoidung = NguoiDungHienTai.Idnguoidung;
+        _donhang.IdUser = NguoiDungHienTai.IdUser;
         //Giả lập tạo TransactionID
         _donhang.Idgiaodich = Guid.NewGuid().ToString();
         GuiDonHang();

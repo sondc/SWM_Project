@@ -8,8 +8,8 @@ namespace MOONLY.DataAccess.Delete
 {
    public class XoaDuLieuGioHang
     {
-        private GioHang _giohang;
-        public GioHang Giohang
+        private Cart _giohang;
+        public Cart Giohang
         {
             get { return _giohang; }
             set { _giohang = value; }
@@ -21,7 +21,7 @@ namespace MOONLY.DataAccess.Delete
             sqldata.ConnectionString = chuoiketnoi.ConnectionString();
             sqldata.DeleteCommandType = SqlDataSourceCommandType.StoredProcedure;
             sqldata.DeleteCommand = "GioHang_Delete";
-            sqldata.DeleteParameters.Add("IDGioHang", Giohang.Idgiohang.ToString());
+            sqldata.DeleteParameters.Add("IDGioHang", Giohang.IdCart.ToString());
             sqldata.Delete();
         }
     }

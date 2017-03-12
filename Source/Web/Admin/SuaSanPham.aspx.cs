@@ -43,7 +43,7 @@ public partial class Admin_SuaSanPham : System.Web.UI.Page
     //----------Hiện sản phẩm theo id sản phẩm--------------
     private void HienSanPham()
     {
-        MOONLY.Common.SanPham Spham = new MOONLY.Common.SanPham();
+        MOONLY.Common.Producct Spham = new MOONLY.Common.Producct();
         Spham.Idsanpham = int.Parse(Request.QueryString["Idsanpham"]);
         XuLyLaySanPhamByID laySanPhamByID = new XuLyLaySanPhamByID();
         laySanPhamByID.Sanpham = Spham;
@@ -57,7 +57,7 @@ public partial class Admin_SuaSanPham : System.Web.UI.Page
             laySanPhamByID.Sanpham.Idhinhsanpham.ToString();
             dropDanhMucSanPham.SelectedIndex =
             dropDanhMucSanPham.Items.IndexOf(dropDanhMucSanPham.Items.FindByText(
-            laySanPhamByID.Sanpham.Danhmucsanpham.Tendanhmucsanpham));
+            laySanPhamByID.Sanpham.Danhmucsanpham.CategoryName));
             LuuTamIdHinhSanPham = laySanPhamByID.Sanpham.Idhinhsanpham;
         }
         catch
@@ -70,7 +70,7 @@ public partial class Admin_SuaSanPham : System.Web.UI.Page
     {
         if (IsValid)
         {
-            MOONLY.Common.SanPham Spham = new MOONLY.Common.SanPham();
+            MOONLY.Common.Producct Spham = new MOONLY.Common.Producct();
             Spham.Idsanpham = int.Parse(Request.QueryString["IDsanpham"]);
             Spham.Ten = txtTenSanPham.Text;
             Spham.Mota = CKEditorControlMoTa.Text;

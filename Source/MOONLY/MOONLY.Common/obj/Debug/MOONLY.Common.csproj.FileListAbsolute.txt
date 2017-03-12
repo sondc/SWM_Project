@@ -5,3 +5,10 @@ C:\Users\MyComputer\Desktop\[Sharecode.vn] Code do an thiet ke web ban hang sony
 C:\Users\MyComputer\Desktop\[Sharecode.vn] Code do an thiet ke web ban hang sony ASP.Net full code\MOONLY\MOONLY.Common\obj\Debug\MOONLY.Common.csprojResolveAssemblyReference.cache
 C:\Users\MyComputer\Desktop\[Sharecode.vn] Code do an thiet ke web ban hang sony ASP.Net full code\MOONLY\MOONLY.Common\obj\Debug\MOONLY.Common.dll
 C:\Users\MyComputer\Desktop\[Sharecode.vn] Code do an thiet ke web ban hang sony ASP.Net full code\MOONLY\MOONLY.Common\obj\Debug\MOONLY.Common.pdb
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.Common\bin\Debug\MOONLY.Common.dll
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.Common\bin\Debug\MOONLY.Common.pdb
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.Common\bin\Debug\MOONLY.Operational.dll
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.Common\bin\Debug\MOONLY.Operational.pdb
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.Common\obj\Debug\MOONLY.Common.csprojResolveAssemblyReference.cache
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.Common\obj\Debug\MOONLY.Common.dll
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.Common\obj\Debug\MOONLY.Common.pdb

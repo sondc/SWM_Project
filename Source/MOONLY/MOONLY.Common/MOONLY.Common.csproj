@@ -56,16 +56,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChiTietDonHang.cs" />
-    <Compile Include="Class1.cs" />
-    <Compile Include="DanhMucSanPham.cs" />
-    <Compile Include="DonHang.cs" />
+    <Compile Include="OrderDetail.cs" />
+    <Compile Include="Category.cs" />
+    <Compile Include="Order.cs" />
     <Compile Include="Enums.cs" />
-    <Compile Include="GioHang.cs" />
-    <Compile Include="KieuNguoiDung.cs" />
-    <Compile Include="NguoiDung.cs" />
+    <Compile Include="Cart.cs" />
+    <Compile Include="UserType.cs" />
+    <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SanPham.cs" />
+    <Compile Include="Producct.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MOONLY.Operational\MOONLY.Operational.csproj">

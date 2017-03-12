@@ -24,7 +24,7 @@ public partial class GioHang : System.Web.UI.Page
     }
     private void HienThiGioHang()
     {
-        MOONLY.Common.GioHang giohang = new MOONLY.Common.GioHang();
+        MOONLY.Common.Cart giohang = new MOONLY.Common.Cart();
         giohang.Cartguid = CartGUID;
         XuLyLayGioHang laygiohang = new XuLyLayGioHang();
         laygiohang.Giohang = giohang;
@@ -89,9 +89,9 @@ public partial class GioHang : System.Web.UI.Page
     private void Update(int id, int soluong)
     {
         XuLyCapNhatGioHang xulycapnhat = new XuLyCapNhatGioHang();
-        MOONLY.Common.GioHang giohang = new MOONLY.Common.GioHang();
-        giohang.Soluong = soluong;
-        giohang.Idgiohang = id;
+        MOONLY.Common.Cart giohang = new MOONLY.Common.Cart();
+        giohang.Quanlity = soluong;
+        giohang.IdCart = id;
         xulycapnhat.Giohang = giohang;
         try
         {
@@ -107,8 +107,8 @@ public partial class GioHang : System.Web.UI.Page
     private void Delete(int id)
     {
         XuLyXoaGioHang xulyxoagiohang = new XuLyXoaGioHang();
-        MOONLY.Common.GioHang giohang = new MOONLY.Common.GioHang();
-        giohang.Idgiohang = id;
+        MOONLY.Common.Cart giohang = new MOONLY.Common.Cart();
+        giohang.IdCart = id;
         xulyxoagiohang.Giohang = giohang;
         try
         {

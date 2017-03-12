@@ -7,3 +7,12 @@ C:\Users\MyComputer\Desktop\[Sharecode.vn] Code do an thiet ke web ban hang sony
 C:\Users\MyComputer\Desktop\[Sharecode.vn] Code do an thiet ke web ban hang sony ASP.Net full code\MOONLY\MOONLY.BusinessLogic\obj\Debug\MOONLY.BusinessLogic.csprojResolveAssemblyReference.cache
 C:\Users\MyComputer\Desktop\[Sharecode.vn] Code do an thiet ke web ban hang sony ASP.Net full code\MOONLY\MOONLY.BusinessLogic\obj\Debug\MOONLY.BusinessLogic.dll
 C:\Users\MyComputer\Desktop\[Sharecode.vn] Code do an thiet ke web ban hang sony ASP.Net full code\MOONLY\MOONLY.BusinessLogic\obj\Debug\MOONLY.BusinessLogic.pdb
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.BusinessLogic\bin\Debug\MOONLY.BusinessLogic.dll
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.BusinessLogic\bin\Debug\MOONLY.BusinessLogic.pdb
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.BusinessLogic\bin\Debug\MOONLY.Common.dll
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.BusinessLogic\bin\Debug\MOONLY.DataAccess.dll
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.BusinessLogic\bin\Debug\MOONLY.Common.pdb
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.BusinessLogic\bin\Debug\MOONLY.DataAccess.pdb
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.BusinessLogic\obj\Debug\MOONLY.BusinessLogic.csprojResolveAssemblyReference.cache
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.BusinessLogic\obj\Debug\MOONLY.BusinessLogic.dll
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.BusinessLogic\obj\Debug\MOONLY.BusinessLogic.pdb

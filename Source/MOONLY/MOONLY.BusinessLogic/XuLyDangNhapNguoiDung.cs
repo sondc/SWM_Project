@@ -9,7 +9,7 @@ namespace MOONLY.BusinessLogic
 {
    public class XuLyDangNhapNguoiDung
     {
-        private NguoiDung _nguoidung;
+        private User _nguoidung;
         private SqlDataSource _ketqua;
         public SqlDataSource Ketqua
         {
@@ -34,15 +34,15 @@ namespace MOONLY.BusinessLogic
             if (grid.Rows.Count != 0)
             {
                 Dangnhaphople = true;
-                Nguoidung.Hoten = grid.Rows[0].Cells[0].Text;
-                Nguoidung.Idnguoidung = int.Parse(grid.Rows[0].Cells[1].Text);
+                Nguoidung.Name = grid.Rows[0].Cells[0].Text;
+                Nguoidung.IdUser = int.Parse(grid.Rows[0].Cells[1].Text);
             }
             else
             {
                 Dangnhaphople = false;
             }
         }
-        public NguoiDung Nguoidung
+        public User Nguoidung
         {
             get { return _nguoidung; }
             set { _nguoidung = value; }

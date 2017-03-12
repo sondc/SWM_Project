@@ -8,9 +8,9 @@ namespace MOONLY.DataAccess.Select
 {
    public class TruyVanDuLieuDanhMucMaster
     {
-        private DanhMucSanPham _danhmucsp;
+        private Category _danhmucsp;
 
-        public DanhMucSanPham Danhmucsp
+        public Category Danhmucsp
         {
             get { return _danhmucsp; }
             set { _danhmucsp = value; }

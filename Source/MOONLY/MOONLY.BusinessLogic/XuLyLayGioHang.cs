@@ -10,13 +10,13 @@ namespace MOONLY.BusinessLogic
    public class XuLyLayGioHang
     {
         private SqlDataSource _ketqua;
-        private GioHang _giohang;
+        private Cart _giohang;
         public SqlDataSource Ketqua
         {
             get { return _ketqua; }
             set { _ketqua = value; }
         }
-        public GioHang Giohang
+        public Cart Giohang
         {
             get { return _giohang; }
             set { _giohang = value; }

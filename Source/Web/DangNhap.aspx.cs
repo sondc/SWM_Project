@@ -21,10 +21,10 @@ public partial class DangNhap : BasePage
     {
         if (IsValid)
         {
-            NguoiDung nguoidung = new NguoiDung();
+            User nguoidung = new User();
             XuLyDangNhapNguoiDung xulydangnhap = new XuLyDangNhapNguoiDung();
-            nguoidung.Tendangnhap = textUsername.Text;
-            nguoidung.Matkhau = textMatKhau.Text;
+            nguoidung.Acccount = textUsername.Text;
+            nguoidung.Password = textMatKhau.Text;
             xulydangnhap.Nguoidung = nguoidung;
             xulydangnhap.Thucthi();
             try
@@ -40,7 +40,7 @@ public partial class DangNhap : BasePage
             {
                 base.NguoiDungHienTai = xulydangnhap.Nguoidung;
                 Label lblWelcome = (Label)Master.FindControl("lblchao");
-                lblWelcome.Text = "Xin chào, " + base.NguoiDungHienTai.Hoten;
+                lblWelcome.Text = "Xin chào, " + base.NguoiDungHienTai.Name;
                 if (Request.Cookies["ReturnURL"] != null)
                 {
                     Response.Redirect(Request.Cookies["ReturnURL"].Value);

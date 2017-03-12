@@ -17,7 +17,7 @@ public partial class DonHangKhach : BasePage
         if (!IsPostBack)
         {
             Label lblWelcome = (Label)Master.FindControl("lblchao");
-            lblWelcome.Text = "Xin chào, " + base.NguoiDungHienTai.Hoten;
+            lblWelcome.Text = "Xin chào, " + base.NguoiDungHienTai.Name;
             HienThiDonHang();
         }
     }

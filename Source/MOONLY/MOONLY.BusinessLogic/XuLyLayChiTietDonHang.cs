@@ -9,8 +9,8 @@ namespace MOONLY.BusinessLogic
 {
   public  class XuLyLayChiTietDonHang
     {
-        private ChiTietDonHang _chitietdonhang;
-        public ChiTietDonHang Chitietdonhang
+        private OrderDetail _chitietdonhang;
+        public OrderDetail Chitietdonhang
         {
             get { return _chitietdonhang; }
             set { _chitietdonhang = value; }

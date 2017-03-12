@@ -9,8 +9,8 @@ namespace MOONLY.BusinessLogic
 {
    public class XuLyDangNhapAdmin
     {
-        private NguoiDung _nguoidung;
-        public NguoiDung Nguoidung
+        private User _nguoidung;
+        public User Nguoidung
         {
             get { return _nguoidung; }
             set { _nguoidung = value; }

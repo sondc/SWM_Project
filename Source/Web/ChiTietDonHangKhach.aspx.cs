@@ -19,7 +19,7 @@ public partial class ChiTietDonHangKhach :BasePage
         if (!IsPostBack)
         {
             Label lblWelcome = (Label)Master.FindControl("lblchao");
-            lblWelcome.Text = "Xin chào, " + base.NguoiDungHienTai.Hoten;
+            lblWelcome.Text = "Xin chào, " + base.NguoiDungHienTai.Name;
             HienChiTietDonHang();
         }
     }
@@ -36,8 +36,8 @@ public partial class ChiTietDonHangKhach :BasePage
     private void HienChiTietDonHang()
     {
         XuLyLayChiTietDonHang xulychitiet = new XuLyLayChiTietDonHang();
-        ChiTietDonHang chitietdonhang = new ChiTietDonHang();
-        chitietdonhang.Iddonhang = int.Parse(Request.QueryString["IdDonHang"]);
+        OrderDetail chitietdonhang = new OrderDetail();
+        chitietdonhang.IdOrder = int.Parse(Request.QueryString["IdDonHang"]);
         xulychitiet.Chitietdonhang = chitietdonhang;
         try
         {
@@ -50,7 +50,7 @@ public partial class ChiTietDonHangKhach :BasePage
         gridChiTietDonHang.DataSource = xulychitiet.Ketqua;
         gridChiTietDonHang.DataBind();
         lblIDGiaoDich.Text = Request.QueryString["IDGiaoDich"];
-        DonHang donhang = new DonHang();
+        Order donhang = new Order();
         donhang.Idgiaodich = Request.QueryString["Idgiaodich"];
     }
     //---------Sự kiện nút trở về-------------------------------------------------

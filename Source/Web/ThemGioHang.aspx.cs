@@ -16,10 +16,10 @@ public partial class ThemGioHang : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         XuLyThemGioHang xulygiohang = new XuLyThemGioHang();
-        MOONLY.Common.GioHang giohang = new MOONLY.Common.GioHang();
-        giohang.Idsanpham = int.Parse(Request.QueryString["IDsanpham"]);
+        MOONLY.Common.Cart giohang = new MOONLY.Common.Cart();
+        giohang.IdProduct = int.Parse(Request.QueryString["IDsanpham"]);
         giohang.Cartguid = CartGUID;
-        giohang.Soluong = 1;
+        giohang.Quanlity = 1;
         xulygiohang.Giohang = giohang;
         
         try

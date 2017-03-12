@@ -8,8 +8,8 @@ namespace MOONLY.DataAccess.Select
 {
    public class TruyVanDuLieuDangNhapNguoiDung
     {
-        private NguoiDung _nguoidung;
-        public NguoiDung Nguoidung
+        private User _nguoidung;
+        public User Nguoidung
         {
             get { return _nguoidung; }
             set { _nguoidung = value; }
@@ -21,8 +21,8 @@ namespace MOONLY.DataAccess.Select
             sqldata.ConnectionString = chuoiketnoi.ConnectionString();
             sqldata.SelectCommandType = SqlDataSourceCommandType.StoredProcedure;
             sqldata.SelectCommand = "DangNhapNguoiDung_Select";
-            sqldata.SelectParameters.Add("TenDangNhap", Nguoidung.Tendangnhap);
-            sqldata.SelectParameters.Add("MatKhau", Nguoidung.Matkhau);
+            sqldata.SelectParameters.Add("TenDangNhap", Nguoidung.Acccount);
+            sqldata.SelectParameters.Add("MatKhau", Nguoidung.Password);
             return sqldata;
         }
     }

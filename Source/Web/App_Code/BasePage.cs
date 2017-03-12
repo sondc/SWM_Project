@@ -15,13 +15,13 @@ using MOONLY.Common;
 public class BasePage : System.Web.UI.Page
 {
     internal const string KEY_CURRENTUSER = "Current Logged In User";
-    public NguoiDung NguoiDungHienTai
+    public User NguoiDungHienTai
     {
         get
         {
             try
             {
-                return (NguoiDung)(Session[KEY_CURRENTUSER]);
+                return (User)(Session[KEY_CURRENTUSER]);
             }
             catch
             {

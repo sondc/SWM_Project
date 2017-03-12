@@ -8,8 +8,8 @@ namespace MOONLY.BusinessLogic
 {
    public class XuLyThemSanPham
     {
-        private SanPham _sanpham;
-        public SanPham Sanpham
+        private Producct _sanpham;
+        public Producct Sanpham
         {
             get { return _sanpham; }
             set { _sanpham = value; }

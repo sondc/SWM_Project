@@ -2,3 +2,7 @@ C:\Users\MyComputer\Desktop\[Sharecode.vn] Code do an thiet ke web ban hang sony
 C:\Users\MyComputer\Desktop\[Sharecode.vn] Code do an thiet ke web ban hang sony ASP.Net full code\MOONLY\MOONLY.Operational\bin\Debug\MOONLY.Operational.pdb
 C:\Users\MyComputer\Desktop\[Sharecode.vn] Code do an thiet ke web ban hang sony ASP.Net full code\MOONLY\MOONLY.Operational\obj\Debug\MOONLY.Operational.dll
 C:\Users\MyComputer\Desktop\[Sharecode.vn] Code do an thiet ke web ban hang sony ASP.Net full code\MOONLY\MOONLY.Operational\obj\Debug\MOONLY.Operational.pdb
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.Operational\bin\Debug\MOONLY.Operational.dll
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.Operational\bin\Debug\MOONLY.Operational.pdb
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.Operational\obj\Debug\MOONLY.Operational.dll
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.Operational\obj\Debug\MOONLY.Operational.pdb

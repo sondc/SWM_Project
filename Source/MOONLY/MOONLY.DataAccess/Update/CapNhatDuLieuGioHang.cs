@@ -8,8 +8,8 @@ namespace MOONLY.DataAccess.Update
 {
    public class CapNhatDuLieuGioHang
     {
-        private GioHang _giohang;
-        public GioHang Giohang
+        private Cart _giohang;
+        public Cart Giohang
         {
             get { return _giohang; }
             set { _giohang = value; }
@@ -21,8 +21,8 @@ namespace MOONLY.DataAccess.Update
             sqldata.ConnectionString = chuoiketnoi.ConnectionString();
             sqldata.UpdateCommandType = SqlDataSourceCommandType.StoredProcedure;
             sqldata.UpdateCommand = "GioHang_Update";
-            sqldata.UpdateParameters.Add("SoLuong", Giohang.Soluong.ToString());
-            sqldata.UpdateParameters.Add("IDGioHang", Giohang.Idgiohang.ToString());
+            sqldata.UpdateParameters.Add("SoLuong", Giohang.Quanlity.ToString());
+            sqldata.UpdateParameters.Add("IDGioHang", Giohang.IdCart.ToString());
             sqldata.Update();
         }
     }

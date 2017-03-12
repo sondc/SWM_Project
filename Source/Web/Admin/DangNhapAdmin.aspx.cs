@@ -21,10 +21,10 @@ public partial class Admin_DangNhapAdmin1 : System.Web.UI.Page
     {
         if (IsValid)
         {
-            NguoiDung nguoidung = new NguoiDung();
+            User nguoidung = new User();
             XuLyDangNhapAdmin xulydangnhapadmin = new XuLyDangNhapAdmin();
-            nguoidung.Tendangnhap = textUsername.Text;
-            nguoidung.Matkhau = textMatKhau.Text;
+            nguoidung.Acccount = textUsername.Text;
+            nguoidung.Password = textMatKhau.Text;
             xulydangnhapadmin.Nguoidung = nguoidung;
             try
             {

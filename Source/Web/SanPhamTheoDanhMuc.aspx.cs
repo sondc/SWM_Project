@@ -23,7 +23,7 @@ public partial class SanPhamTheoDanhMuc : System.Web.UI.Page
     }
     private void HienThiSanPham()
     {
-        SanPham sanpham = new SanPham();
+        Producct sanpham = new Producct();
         sanpham.Iddanhmucsanpham = int.Parse(Request.QueryString["IdDanhMucSanPham"]);
         XuLyLayDuLieuSanPhamTheoDanhMuc xulylaysanpham = new XuLyLayDuLieuSanPhamTheoDanhMuc();
         xulylaysanpham.Sanpham = sanpham;

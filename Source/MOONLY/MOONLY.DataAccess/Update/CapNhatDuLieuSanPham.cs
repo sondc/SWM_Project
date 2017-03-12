@@ -9,8 +9,8 @@ namespace MOONLY.DataAccess.Update
 {
   public  class CapNhatDuLieuSanPham
     {
-        private SanPham _sanpham;
-        public SanPham Sanpham
+        private Producct _sanpham;
+        public Producct Sanpham
         {
             get { return _sanpham; }
             set { _sanpham = value; }

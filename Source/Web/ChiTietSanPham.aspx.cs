@@ -22,7 +22,7 @@ public partial class ChiTietSanPham : System.Web.UI.Page
     }
     private void Hienchitietsanpham()
     {
-        SanPham Spham = new SanPham();
+        Producct Spham = new Producct();
         Spham.Idsanpham = int.Parse(Request.QueryString["IdSanPham"]);
         XuLyLaySanPhamByID laySanPham = new XuLyLaySanPhamByID();
         laySanPham.Sanpham = Spham;

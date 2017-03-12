@@ -43,7 +43,7 @@ public partial class Admin_ThemSanPham : System.Web.UI.Page
         if (IsValid)
         {
             XuLyThemSanPham themsanpham = new XuLyThemSanPham();
-            MOONLY.Common.SanPham Spham = new MOONLY.Common.SanPham();
+            MOONLY.Common.Producct Spham = new MOONLY.Common.Producct();
             Spham.Iddanhmucsanpham = int.Parse(dropDanhMucSanPham.SelectedItem.Value);
             Spham.Ten = txtTenSanPham.Text; // txtTenSanPham là ID của TextBox
             Spham.Mota = CKEditorControlMoTa.Text;//txtTenSanPham là ID của TextBox

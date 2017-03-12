@@ -26,11 +26,11 @@ public partial class Admin_ChiTietDonHang : System.Web.UI.Page
     {
         XuLyLayChiTietDonHang xulychitietdonhang = new XuLyLayChiTietDonHang();
         XuLyLayDonHangByID xulydonhangid = new XuLyLayDonHangByID();
-        ChiTietDonHang chitietdonhang = new ChiTietDonHang();
-        chitietdonhang.Iddonhang = int.Parse(Request.QueryString["IDdonhang"]);
+        OrderDetail chitietdonhang = new OrderDetail();
+        chitietdonhang.IdOrder = int.Parse(Request.QueryString["IDdonhang"]);
         xulychitietdonhang.Chitietdonhang = chitietdonhang;
-        DonHang donhang = new DonHang();
-        donhang.Iddonhang = int.Parse(Request.QueryString["IDdonhang"]);
+        Order donhang = new Order();
+        donhang.IdOrder = int.Parse(Request.QueryString["IDdonhang"]);
         xulydonhangid.Donhang = donhang;
         try
         {
@@ -101,9 +101,9 @@ public partial class Admin_ChiTietDonHang : System.Web.UI.Page
 
     protected void btnCapNhat_Click(object sender, ImageClickEventArgs e)
     {
-        DonHang donhang = new DonHang();
+        Order donhang = new Order();
         XuLyCapNhatDonHang xulycapnhatdonhang = new XuLyCapNhatDonHang();
-        donhang.Iddonhang = int.Parse(Request.QueryString["Iddonhang"]);
+        donhang.IdOrder = int.Parse(Request.QueryString["Iddonhang"]);
         donhang.Idtinhtrangdonhang =
         int.Parse(dropdownlistOrderStatus.SelectedItem.Value);
         donhang.Ngayxulydonhang = Convert.ToDateTime(textShippedDate.Text);

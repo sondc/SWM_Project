@@ -9,14 +9,14 @@ namespace MOONLY.BusinessLogic
 {
    public class XuLyLaySanPhamByID
     {
-        private SanPham _sanpham;
+        private Producct _sanpham;
         private SqlDataSource _ketqua;
         public SqlDataSource Ketqua
         {
             get { return _ketqua; }
             set { _ketqua = value; }
         }
-        public SanPham Sanpham
+        public Producct Sanpham
         {
             get { return _sanpham; }
             set { _sanpham = value; }
@@ -34,7 +34,7 @@ namespace MOONLY.BusinessLogic
             Sanpham.Mota = grid.Rows[0].Cells[4].Text.ToString();
             Sanpham.Giasanpham = Convert.ToInt32(grid.Rows[0].Cells[5].Text.ToString());
             Sanpham.Idsanpham = int.Parse(grid.Rows[0].Cells[0].Text.ToString());
-            Sanpham.Danhmucsanpham.Tendanhmucsanpham = grid.Rows[0].Cells[2].Text.ToString();
+            Sanpham.Danhmucsanpham.CategoryName = grid.Rows[0].Cells[2].Text.ToString();
             Sanpham.Idhinhsanpham = int.Parse(grid.Rows[0].Cells[3].Text.ToString());
         }
 

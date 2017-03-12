@@ -8,8 +8,8 @@ namespace MOONLY.BusinessLogic
 {
    public class XuLyThemNguoiDung
     {
-        private NguoiDung _nguoidung;
-        public NguoiDung Nguoidung
+        private User _nguoidung;
+        public User Nguoidung
         {
             get { return _nguoidung; }
             set { _nguoidung = value; }
@@ -19,7 +19,7 @@ namespace MOONLY.BusinessLogic
             ChenDuLieuNguoiDung nguoidungdata = new ChenDuLieuNguoiDung();
             nguoidungdata.Nguoidung = this.Nguoidung;
             nguoidungdata.chendulieunguoidung();
-            this.Nguoidung.Idnguoidung = nguoidungdata.Nguoidung.Idnguoidung;
+            this.Nguoidung.IdUser = nguoidungdata.Nguoidung.IdUser;
         }
     }
 }

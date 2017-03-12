@@ -20,18 +20,18 @@ public partial class DangKy : BasePage
 
     protected void btnDangKy_Click(object sender, ImageClickEventArgs e)
     {
-        NguoiDung nguoidung = new NguoiDung();
+        User nguoidung = new User();
         XuLyThemNguoiDung themnguoidung = new XuLyThemNguoiDung();
         if (IsValid)
         {
-            nguoidung.Idkieunguoidung = (int)Enums.KieuNguoiDung.CUSTOMER;
-            nguoidung.Hoten = textHoTen.Text;
-            nguoidung.Tendangnhap = textTenDangNhap.Text;
-            nguoidung.Diachi = textQuanHuyen.Text;
+            nguoidung.IdUserType = (int)Enums.KieuNguoiDung.CUSTOMER;
+            nguoidung.Name = textHoTen.Text;
+            nguoidung.Acccount = textTenDangNhap.Text;
+            nguoidung.Address = textQuanHuyen.Text;
             nguoidung.Madienthoai = textMaDienThoai.Text;
-            nguoidung.Matkhau = textMatKhau.Text;
+            nguoidung.Password = textMatKhau.Text;
             nguoidung.Email = textEmail.Text;
-            nguoidung.Sodienthoai = textSoDienThoai.Text;
+            nguoidung.Phone = textSoDienThoai.Text;
             nguoidung.Sofax = textFax.Text;
             themnguoidung.Nguoidung = nguoidung;
             try

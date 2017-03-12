@@ -7,3 +7,12 @@ C:\Users\MyComputer\Desktop\[Sharecode.vn] Code do an thiet ke web ban hang sony
 C:\Users\MyComputer\Desktop\[Sharecode.vn] Code do an thiet ke web ban hang sony ASP.Net full code\MOONLY\MOONLY.DataAccess\obj\Debug\MOONLY.DataAccess.csprojResolveAssemblyReference.cache
 C:\Users\MyComputer\Desktop\[Sharecode.vn] Code do an thiet ke web ban hang sony ASP.Net full code\MOONLY\MOONLY.DataAccess\obj\Debug\MOONLY.DataAccess.dll
 C:\Users\MyComputer\Desktop\[Sharecode.vn] Code do an thiet ke web ban hang sony ASP.Net full code\MOONLY\MOONLY.DataAccess\obj\Debug\MOONLY.DataAccess.pdb
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.DataAccess\bin\Debug\MOONLY.DataAccess.dll
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.DataAccess\bin\Debug\MOONLY.DataAccess.pdb
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.DataAccess\bin\Debug\MOONLY.Common.dll
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.DataAccess\bin\Debug\MOONLY.Operational.dll
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.DataAccess\bin\Debug\MOONLY.Common.pdb
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.DataAccess\bin\Debug\MOONLY.Operational.pdb
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.DataAccess\obj\Debug\MOONLY.DataAccess.csprojResolveAssemblyReference.cache
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.DataAccess\obj\Debug\MOONLY.DataAccess.dll
+E:\Chuyen nganh 8\PROJECT_GIT\Source\MOONLY\MOONLY.DataAccess\obj\Debug\MOONLY.DataAccess.pdb

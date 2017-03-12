@@ -8,8 +8,8 @@ namespace MOONLY.DataAccess.Insert
 {
   public  class ChenDuLieuDonHang
     {
-        private DonHang _donhang;
-        public DonHang Donhang
+        private Order _donhang;
+        public Order Donhang
         {
             get { return _donhang; }
             set { _donhang = value; }
@@ -21,7 +21,7 @@ namespace MOONLY.DataAccess.Insert
             sqldata.ConnectionString = chuoiketnoi.ConnectionString();
             sqldata.InsertCommandType = SqlDataSourceCommandType.StoredProcedure;
             sqldata.InsertCommand = "DonHang_Insert";
-            sqldata.InsertParameters.Add("IdNguoiDung", Donhang.Idnguoidung.ToString());
+            sqldata.InsertParameters.Add("IdNguoiDung", Donhang.IdUser.ToString());
             sqldata.InsertParameters.Add("IdGiaoDich", Donhang.Idgiaodich.ToString());
             sqldata.Insert();
             sqldata.SelectCommandType = SqlDataSourceCommandType.StoredProcedure;

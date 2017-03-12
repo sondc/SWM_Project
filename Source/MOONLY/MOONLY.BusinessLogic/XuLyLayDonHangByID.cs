@@ -9,8 +9,8 @@ namespace MOONLY.BusinessLogic
 {
    public class XuLyLayDonHangByID
     {
-        private DonHang _donhang;
-        public DonHang Donhang
+        private Order _donhang;
+        public Order Donhang
         {
             get { return _donhang; }
             set { _donhang = value; }

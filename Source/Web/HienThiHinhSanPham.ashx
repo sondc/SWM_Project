@@ -13,7 +13,7 @@ using System.Web.UI.WebControls;
 public class HienThiHinhSanPham : IHttpHandler {
     
     public void ProcessRequest (HttpContext context) {
-        SanPham sanpham = new SanPham();
+        Producct sanpham = new Producct();
         sanpham.Idhinhsanpham = int.Parse(context.Request.QueryString["Idhinhsanpham"]);
         XuLyLayHinhSanPham XuLyLayHinh = new XuLyLayHinhSanPham();
         XuLyLayHinh.Sanpham = sanpham;

@@ -8,8 +8,8 @@ namespace MOONLY.DataAccess.Select
 {
    public class TruyVanDuLieuDonHangByID
     {
-        private DonHang _donhang;
-        public DonHang Donhang
+        private Order _donhang;
+        public Order Donhang
         {
             get { return _donhang; }
             set { _donhang = value; }
@@ -21,7 +21,7 @@ namespace MOONLY.DataAccess.Select
             sqldata.ConnectionString = chuoiketnoi.ConnectionString();
             sqldata.SelectCommandType = SqlDataSourceCommandType.StoredProcedure;
             sqldata.SelectCommand = "DonHangByID_Select";
-            sqldata.SelectParameters.Add("IDDonHang", Donhang.Iddonhang.ToString());
+            sqldata.SelectParameters.Add("IDDonHang", Donhang.IdOrder.ToString());
             return sqldata;
         }
     }
